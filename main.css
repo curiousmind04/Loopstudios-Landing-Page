@@ -251,7 +251,7 @@ h3 {
 }
 
 .mobile-button:active,
-.mobile-button:focus {
+.mobile-button:hover {
   background: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 0%);
