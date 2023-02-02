@@ -293,6 +293,10 @@ footer a {
   margin-bottom: 1.2rem;
 }
 
+.icons-container a {
+  display: block;
+}
+
 .icons-container img {
   cursor: pointer;
 }
@@ -332,12 +336,16 @@ footer p {
     width: 200px;
   }
   .desktop-menu-links {
-    width: 40%;
+    width: 35%;
     display: block;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-top: 0.8rem;
+  }
+  .desktop-menu-links li {
+    height: 2rem;
   }
   .desktop-menu-links a {
     color: hsl(0, 0%, 100%);
@@ -466,6 +474,9 @@ footer p {
   .logo-footer {
     margin: 0;
   }
+  .footer-links-container {
+    margin-top: 1.4rem;
+  }
   footer ul {
     display: flex;
     justify-content: space-between;
@@ -474,9 +485,25 @@ footer p {
   }
   .footer-links-container li {
     margin: 0;
+    height: 2rem;
   }
   .icons-container {
     width: 28%;
     margin: 0;
+  }
+  .icons-container {
+    height: 2rem;
+  }
+  .icons-container li {
+    height: 100%;
+  }
+  .twitter-icon {
+    padding-top: 3px;
+  }
+  .underline-effect {
+    background-image: linear-gradient(to bottom, #fff 100%, #fff 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 24px 2px;
   }
 }
