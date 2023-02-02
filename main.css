@@ -250,7 +250,8 @@ h3 {
   cursor: pointer;
 }
 
-.mobile-button:active {
+.mobile-button:active,
+.mobile-button:focus {
   background: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 0%);
