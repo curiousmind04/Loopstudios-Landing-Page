@@ -236,6 +236,7 @@ h3 {
 }
 
 .mobile-button {
+  color: hsl(0, 0%, 0%);
   height: 2.6rem;
   width: 42.5%;
   background: none;
@@ -247,6 +248,12 @@ h3 {
   line-height: 2.6rem;
   margin-top: 0.6rem;
   cursor: pointer;
+}
+
+.mobile-button:active {
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 0%);
 }
 
 .desktop-button {
@@ -402,6 +409,7 @@ footer p {
     margin-bottom: 0;
   }
   .desktop-button {
+    color: hsl(0, 0%, 0%);
     height: 2.6rem;
     width: 160px;
     background: none;
