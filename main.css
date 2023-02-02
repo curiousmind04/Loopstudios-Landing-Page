@@ -7,7 +7,7 @@
 }
 
 html {
-  min-width: 376px;
+  min-width: 23.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,11 +15,7 @@ html {
 }
 
 body {
-  width: 376px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  width: 23.5rem;
   font-family: "Alata", sans-serif;
   position: relative;
 }
@@ -32,7 +28,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   cursor: pointer;
   display: none;
 }
@@ -41,9 +37,8 @@ header {
   background-image: url("images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  /* width: 376px; */
   width: 100%;
-  height: 650px;
+  height: 40.625rem;
   padding: 2.5rem 1.5rem 2.5rem 1.5rem;
   margin-bottom: 6rem;
   display: flex;
@@ -80,11 +75,11 @@ header {
 
 .mobile-menu {
   width: 100%;
-  height: 650px;
+  height: 40.625rem;
   background: hsl(0, 0%, 0%);
   padding: 2.5rem 1.5rem;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   left: 0;
   display: none;
@@ -110,7 +105,7 @@ header {
 
 .mobile-menu ul {
   list-style: none;
-  margin-top: 154px;
+  margin-top: 9.625rem;
 }
 
 .mobile-menu li {
@@ -127,12 +122,11 @@ header {
 }
 
 .header-title {
-  /* width: 100%; */
-  width: 328px;
+  width: 20.5rem;
   border: 2px solid hsl(0, 0%, 100%);
   padding: 1.5rem 2rem 1rem 1.5rem;
   position: absolute;
-  top: 226px;
+  top: 14.125rem;
 }
 
 .header-title h1 {
@@ -150,16 +144,12 @@ main {
 
 .interactive-mobile {
   margin-bottom: 2.6rem;
-  width: 325px;
+  width: 20.3125rem;
 }
 
 .interactive-desktop {
   display: none;
 }
-
-/* main img {
-  width: 100%;
-} */
 
 h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -173,7 +163,7 @@ h2 {
 main p {
   color: hsl(0, 0%, 55%);
   font-size: 0.94rem;
-  width: 275px;
+  width: 17.1875rem;
   line-height: 1.5rem;
   margin: auto;
   margin-bottom: 6rem;
@@ -189,7 +179,7 @@ h3 {
 }
 
 .creations {
-  width: 325px;
+  width: 20.3125rem;
   margin: auto;
 }
 
@@ -210,6 +200,7 @@ h3 {
     rgba(0, 0, 0, 0.01) 80%
   );
   z-index: 1;
+  cursor: pointer;
 }
 
 .creation img {
@@ -229,6 +220,7 @@ h3 {
   bottom: 18%;
   left: 6.4%;
   z-index: 2;
+  pointer-events: none;
 }
 
 .desktop-creations {
@@ -250,8 +242,7 @@ h3 {
   cursor: pointer;
 }
 
-.mobile-button:active,
-.mobile-button:hover {
+.mobile-button:active {
   background: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 0%);
@@ -314,10 +305,10 @@ footer p {
   font-size: 0.9rem;
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 76.25rem) {
   body {
     width: 100%;
-    max-width: 1440px;
+    max-width: 90rem;
   }
   header {
     background-image: none;
@@ -388,7 +379,7 @@ footer p {
     text-align: left;
     position: absolute;
     right: 0;
-    top: 180px;
+    top: 11.25rem;
   }
   .desktop-box h2 {
     font-size: 2.8rem;
@@ -412,7 +403,7 @@ footer p {
   .desktop-button {
     color: hsl(0, 0%, 0%);
     height: 2.6rem;
-    width: 160px;
+    width: 10rem;
     background: none;
     border: 2px solid hsl(0, 0%, 41%);
     font: inherit;
@@ -470,7 +461,7 @@ footer p {
     justify-content: space-between;
     align-items: flex-start;
     width: 50%;
-    height: 70px;
+    height: 4.375rem;
   }
   .footer-right {
     display: flex;
@@ -478,7 +469,7 @@ footer p {
     justify-content: space-between;
     align-items: flex-end;
     width: 50%;
-    height: 70px;
+    height: 4.375rem;
   }
   .logo-footer {
     margin: 0;
@@ -514,5 +505,9 @@ footer p {
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: 24px 2px;
+  }
+  .overlay-hover-effect {
+    background: #ccc;
+    opacity: 0.7;
   }
 }
